@@ -1,0 +1,63 @@
+package bot
+
+import java.util.Scanner
+
+
+val scanner = Scanner(System.`in`) 
+
+fun main() {
+    greet("Terminator", "2023") 
+    remindName()
+    guessAge()
+    count()
+    test() // all paragraphs
+}
+
+fun greet(assistantName: String, birthYear: String) {
+    println("Hello! My name is ${assistantName}.")
+    println("I was created in ${birthYear}.")
+    println("Please, remind me your name.")
+}
+
+fun remindName() {
+    val name = scanner.nextLine()
+    println("What a great name you have, ${name}!")
+}
+
+fun guessAge() {
+    println("Let me guess your age.")
+    println("Enter remainders of dividing your age by 3, 5 and 7.")
+    val rem3 = scanner.nextInt()
+    val rem5 = scanner.nextInt()
+    val rem7 = scanner.nextInt()
+    val age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+    println("Your age is ${age}; that's a good time to start programming!")
+}
+
+fun count() {
+    println("Now I will prove to you that I can count to any number you want.")
+    val num = scanner.nextInt()
+    for (i in 0..num) {
+        print(i)
+        println("!") //ability to count
+    }
+}
+
+fun test() {
+    println("Let's test your programming knowledge.")
+    fun test() {
+    println("Let's test your programming knowledge.")
+    println("Let's test your programming knowledge.")
+    println("What is the most popular sport?") 
+    println("1. Football.")
+    println("2. Basketball.")
+    println("3. Tennis.")
+    println("4. Hockey.") 
+    val choise = readln().toInt()
+    while (choise != 1) {
+        println("Please, try again.") 
+}
+    println("Congratulations, have a nice day!") 
+}
+    println("Congratulations, have a nice day!") //test
+}
